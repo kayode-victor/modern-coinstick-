@@ -16,16 +16,22 @@ export default function Error({
   }, [error]);
 
   return (
-    <div>
-      <h2>Something went wrong!</h2>
-      <button
-        onClick={
-          // Attempt to recover by trying to re-render the segment
-          () => reset()
-        }
-      >
-        Try again
-      </button>
+    <div className="w-full flex flex-col items-center py-10 md:py-16 lg:py-20 gap-10">
+      <h2 className="font-bold text-3xl md:text-4xl lg:text-6xl tracking-wider">
+        Something went wrong!
+      </h2>
+      <div className="flex gap-4">
+        <p>ckick to reset:</p>
+        <button
+          className="font-medium underline underline-offset-4"
+          onClick={
+            // Attempt to recover by trying to re-render the segment
+            () => reset()
+          }
+        >
+          Try again
+        </button>
+      </div>
     </div>
   );
 }

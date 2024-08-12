@@ -1,69 +1,28 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
-  navItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
-  ],
+  name: "Coinstick (Clone)",
+  description: "Coinstick Clone - A replica by Kayode Victor.",
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Buy and Sell Crypto",
+      href: "#",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Trade on WhatsApp",
+      href: "#",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Rates",
+      href: "#",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Crypto Prices",
+      href: "#",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "About Us",
+      href: "#",
     },
   ],
-  links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
-  },
 };
