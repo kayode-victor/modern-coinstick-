@@ -84,7 +84,7 @@ const StickyScrollReveal = ({
                   opacity: activeIndex === index ? 1 : 0.3,
                   color: activeIndex === index ? textColor : undefined,
                 }}
-                className="text-2xl md:text-4xl lg:text-5xl tracking-wide font-bold"
+                className="text-2xl md:text-3xl lg:text-4xl tracking-wide font-bold"
                 initial={{ opacity: 0 }}
               >
                 {item.title}
