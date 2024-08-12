@@ -251,7 +251,7 @@ export const Card = ({
         )}
       </AnimatePresence>
       <motion.button
-        className="rounded-3xl group bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 border-2 md:border-4 border-transparent dark:border-cyan-400"
+        className="rounded-3xl group bg-gray-100 dark:bg-neutral-900 h-[24rem] w-64 md:h-[36rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 border-2 md:border-4 border-transparent dark:border-cyan-400"
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
       >
@@ -264,13 +264,13 @@ export const Card = ({
             {card.category}
           </motion.p>
           <motion.p
-            className="text-white dark:text-cyan-300 text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white dark:text-cyan-300 text-lg md:text-3xl tracking-widest font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
             layoutId={layout ? `title-${card.title}` : undefined}
           >
             {card.title}
           </motion.p>
         </div>
-        <div className="absolute inset-0 bg-white/30 group-hover:backdrop-blur-none backdrop-blur-sm z-30 pointer-events-none" />
+        <div className="absolute inset-0 dark:bg-black/50 bg-black/20 group-hover:backdrop-blur-none backdrop-blur-sm z-30 pointer-events-none" />
         <BlurImage
           fill
           alt={card.title}

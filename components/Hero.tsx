@@ -69,7 +69,7 @@ const Hero = () => {
 
   return (
     <div className="w-full h-full">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-3xl lg:text-5xl font-bold tracking-widest text-neutral-800 dark:text-neutral-200 font-sans">
+      <h2 className="max-w-7xl pl-4 mx-auto text-3xl lg:text-5xl font-bold tracking-widest text-neutral-800 dark:text-neutral-200 font-sans">
         Get to know Coinstick.
       </h2>
       <Carousel items={cards} />

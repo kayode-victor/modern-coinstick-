@@ -42,15 +42,17 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen w-full overflow-x-hidden">
+          <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="container mx-auto max-w-7xl flex">{children}</main>
-            <footer className="w-full flex items-center justify-center py-2">
+            <main className="container mx-auto w-full pt-6 flex-grow">
+              {children}
+            </main>
+            <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
                 href="https://kv4biz.vercel.app/"
-                title="nextui.org homepage"
+                title="My portfolio"
               >
                 <span className="text-default-700 font-light">Powered by</span>
                 <p className="text-cyan-600 dark:text-cyan-400 font-semibold hover:underline">
